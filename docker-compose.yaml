@@ -7,6 +7,6 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: user
+      POSTGRES_USER: ${JDBC_DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${JDBC_DATABASE_PASSWORD}
       POSTGRES_DB: event_center
